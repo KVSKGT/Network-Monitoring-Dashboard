@@ -34,7 +34,7 @@ export default function Dashboard() {
 
     const connectWebSocket = () => {
       try {
-        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+        const apiUrl = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000').replace(/\/$/, '')
         const wsUrl = apiUrl.replace(/^http/, 'ws')
         websocket = new WebSocket(`${wsUrl}/ws`)
 
