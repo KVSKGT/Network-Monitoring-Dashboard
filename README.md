@@ -2,7 +2,15 @@
 
 A real-time network monitoring dashboard that visualizes network performance data including bandwidth usage, latency, packet loss, connected devices, and network health alerts.
 
-## 🌟 Features
+## � Live Demo
+
+**Try it now!** No installation required:
+- 🎯 **Frontend:** https://network-monitoring-dashboard-eight.vercel.app/
+- 🔧 **Backend API:** https://network-monitoring-dashboard-6fop.onrender.com/
+
+> Note: Render free tier may take 30 seconds to wake up on first access
+
+## �🌟 Features
 
 - **Real-time Network Monitoring**: Live tracking of bandwidth, latency, and packet loss
 - **Interactive Dashboard**: Beautiful charts and visualizations using Chart.js
@@ -305,7 +313,55 @@ The UI uses TailwindCSS utility classes for styling. Custom styles can be added 
 - Limit historical data retention to manage database size
 - Use production builds for better frontend performance
 
-## 📄 License
+## � Live Deployment
+
+This project is deployed on:
+
+### Frontend (Vercel)
+- **URL**: https://network-monitoring-dashboard-eight.vercel.app/
+- **Repository**: Connected to GitHub main branch
+- **Auto-deployment**: Enabled on every push to main
+
+### Backend (Render)
+- **URL**: https://network-monitoring-dashboard-6fop.onrender.com/
+- **Repository**: Connected to GitHub main branch
+- **Auto-deployment**: Enabled on every push to main
+
+### Deployment Configuration
+
+**For Vercel (Frontend):**
+```json
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "env": {
+    "NEXT_PUBLIC_API_URL": "https://network-monitoring-dashboard-6fop.onrender.com"
+  }
+}
+```
+
+**For Render (Backend):**
+```yaml
+services:
+  - type: web
+    name: network-monitor-backend
+    env: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: true
+```
+
+### Environment Variables
+
+Create a `.env` file locally with:
+```
+NEXT_PUBLIC_API_URL=https://network-monitoring-dashboard-6fop.onrender.com
+```
+
+## �📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 

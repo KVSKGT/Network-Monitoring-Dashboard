@@ -1,6 +1,19 @@
 # Quick Start Guide
 
-## 🚀 Getting Started (5 minutes)
+## 🌐 Live Demo
+
+**Want to see it in action right now?**
+
+- 🎯 **Live Dashboard**: https://network-monitoring-dashboard-eight.vercel.app/
+- 🔧 **Backend API**: https://network-monitoring-dashboard-6fop.onrender.com/
+
+No installation needed - just open the link above!
+
+> **Note**: The backend may take 30 seconds to start on first access (Render free tier)
+
+---
+
+## 🚀 Getting Started Locally (5 minutes)
 
 ### Prerequisites
 - Python 3.8+ installed
