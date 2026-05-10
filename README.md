@@ -6,9 +6,8 @@ A real-time network monitoring dashboard that visualizes network performance dat
 
 **Try it now!** No installation required:
 - 🎯 **Frontend:** https://network-monitoring-dashboard-eight.vercel.app/
-- 🔧 **Backend API:** https://network-monitoring-dashboard-6fop.onrender.com/
 
-> Note: Render free tier may take 30 seconds to wake up on first access
+> Ready to use - just open the link!
 
 ## �🌟 Features
 
@@ -321,11 +320,7 @@ This project is deployed on:
 - **URL**: https://network-monitoring-dashboard-eight.vercel.app/
 - **Repository**: Connected to GitHub main branch
 - **Auto-deployment**: Enabled on every push to main
-
-### Backend (Render)
-- **URL**: https://network-monitoring-dashboard-6fop.onrender.com/
-- **Repository**: Connected to GitHub main branch
-- **Auto-deployment**: Enabled on every push to main
+- **Backend Connection**: Configured via environment variable
 
 ### Deployment Configuration
 

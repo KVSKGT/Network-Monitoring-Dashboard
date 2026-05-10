@@ -5,11 +5,8 @@
 **Want to see it in action right now?**
 
 - 🎯 **Live Dashboard**: https://network-monitoring-dashboard-eight.vercel.app/
-- 🔧 **Backend API**: https://network-monitoring-dashboard-6fop.onrender.com/
 
-No installation needed - just open the link above!
-
-> **Note**: The backend may take 30 seconds to start on first access (Render free tier)
+Just open the link above - no installation needed!
 
 ---
 
