@@ -19,7 +19,8 @@ export function ProjectInfo() {
   const [activeTab, setActiveTab] = useState<'benefits' | 'scenarios' | 'users'>('benefits')
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/project-info')
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+    fetch(`${apiUrl}/api/project-info`)
       .then(res => res.json())
       .then(data => {
         setProjectInfo(data)
